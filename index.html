@@ -3,22 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>অসমীয়া অভিধান | Assamese Dictionary</title>
+  <title>অসমীয়া-ইংৰাজী অভিধান | Assamese-English Dictionary</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>অসমীয়া অভিধান</h1>
-    <p>Assamese-English Dictionary</p>
+    <h1>অসমীয়া-ইংৰাজী অভিধান</h1>
+    <p>Assamese ↔ English Dictionary</p>
   </header>
 
   <div class="search-container">
-    <input type="text" id="searchInput" placeholder="শব্দটো সন্ধান কৰক... (Search word)">
+    <div class="toggle-container">
+      <span id="direction-label">অসমীয়া → ইংৰাজী</span>
+      <label class="switch">
+        <input type="checkbox" id="toggleDirection">
+        <span class="slider"></span>
+      </label>
+    </div>
+    <input type="text" id="searchInput" placeholder="অসমীয়া বা ইংৰাজী শব্দ লিখক...">
     <button onclick="searchWord()">সন্ধান কৰক</button>
   </div>
 
   <div id="wordResult" class="word-result">
-    <!-- Results will appear here -->
+    <!-- Results appear here -->
   </div>
 
   <footer>
